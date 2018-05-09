@@ -1,1 +1,1 @@
-# hackerrank-algorithms
+# Solving Hackerrank - Algorithms Section
