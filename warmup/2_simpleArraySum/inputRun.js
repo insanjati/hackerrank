@@ -22,31 +22,17 @@ function readLine() {
     return inputString[currentLine++];
 }
 
-/*
- * Complete the simpleArraySum function below.
- */
 function simpleArraySum(ar) {
-    /*
-     * Write your code here.
-    let total = 0
-    for (let i=0; i<ar.length; i++) {
-      total += ar[i];
-    };
-    return total;*/
     let arSum = ar.reduce( (accumulator, currentValue) => accumulator + currentValue);
     return arSum;
 }
 
 function main() {
     const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
-
     const arCount = parseInt(readLine(), 10);
-
     const ar = readLine().split(' ').map(arTemp => parseInt(arTemp, 10));
-  
     let result = simpleArraySum(ar);
 
     ws.write(result + "\n");
-
     ws.end();
 }
