@@ -43,5 +43,4 @@ function main() {
     }
     var result = diagonalDifference(a);
     process.stdout.write("" + result + "\n");
-
 }
